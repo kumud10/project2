@@ -1,0 +1,89 @@
+{% load static%}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Kumud</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet" type="text/css" />
+<link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="menu-wrapper">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/">Homepage</a></li>
+			<li><a href="/about">About</a></li>
+		    <li><a href="/contact">Contact</a></li>
+		</ul>
+	</div>
+	<!-- end #menu --> 
+</div>
+<div id="header-wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">Kumud.com</a></h1>
+			
+		</div>
+	</div>
+</div>
+<div id="wrapper"> 
+	<!-- end #header -->
+	<div id="page-bgtop"></div>
+	<div id="page">
+		<div><img src="{% static 'kumud.jpg' %}" width="920" height="500" alt="" /></div>
+		<div id="content">
+
+            {% block mycontent %}
+            {% endblock %}
+            {% block mycontent1 %}
+            {% endblock %}
+			
+			
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				
+
+				<li>
+					<h2>Categories</h2>
+					<ul>
+						<li><a href="#">Road</a></li>
+						<li><a href="#">Off-Road</a></li>
+						<li><a href="#">Race</a></li>
+						<li><a href="#">Buggy</a></li>
+						<li><a href="#">Metal</a></li>
+						<li><a href="#">Family</a></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Filters</h2>
+					<ul>
+						<li><a href="#">Speed</a></li>
+						<li><a href="#">Class</a></li>
+						<li><a href="#">Mileage</a></li>
+						<li><a href="#">Engine</a></li>
+						<li><a href="#">Suspension</a></li>
+						<li><a href="#">Budget</a></li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<div id="page-bgbtm"></div>
+	<!-- end #page --> 
+</div>
+<div id="footer">
+	<p>2002. All rights reserved. Kumud The Founder!  <a href="http://www.freecsstemplates.org/">KING</a>. Photos by <a href="http://fotogrph.com/">fotogrph</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
